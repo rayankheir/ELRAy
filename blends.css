@@ -1,0 +1,28 @@
+/* ==================================================
+   BLENDS.CSS
+   قسم "Our Blends" بهويته الخاصة (مش نسخة عن
+   best-seller.css). شكل الكارد نفسه بـ products.css،
+   بس توزيع الشبكة هون خاص فيه.
+================================================== */
+.blends-section {
+    min-height: auto;
+    display: block !important;
+    padding: 110px 7% 120px;
+    text-align: center;
+}
+
+.blends-section h2 {
+    
+    display: block;
+    width: 100%;
+    margin: 0 0 60px;
+}
+
+.blends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    align-items: start;
+    text-align: left;
+}

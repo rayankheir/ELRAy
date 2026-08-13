@@ -1,0 +1,637 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    background: #050505;
+
+    color: #3a2a21;
+
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 70px 5%;
+
+    background: #f3eee6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.contact-container {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(65, 45, 32, 0.16);
+
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.contact-flip {
+
+    width: 100%;
+
+    height: 700px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+/* =========================================
+   THREE PAGES
+========================================= */
+
+.contact-pages {
+
+    width: 300%;
+
+    height: 100%;
+
+    display: flex;
+
+    transition:
+        transform 0.9s
+        cubic-bezier(.77, 0, .18, 1);
+
+}
+
+
+/* =========================================
+   EACH PAGE
+========================================= */
+
+.contact-page {
+
+    width: 33.3333%;
+
+    height: 100%;
+
+    flex-shrink: 0;
+
+    padding: 55px;
+
+    background: #e8ded1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================
+   PAGE TRANSFORM
+========================================= */
+
+.contact-pages.show-get {
+
+    transform: translateX(0);
+
+}
+
+
+.contact-pages.show-talk {
+
+    transform: translateX(-33.3333%);
+
+}
+
+
+.contact-pages.show-payment {
+
+    transform: translateX(-66.6666%);
+
+}
+
+
+/* =========================================
+   TITLES
+========================================= */
+
+.small-title,
+.form-small-title {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8b6b53;
+
+}
+
+
+.contact-page h2 {
+
+    font-size: 42px;
+
+    line-height: 1;
+
+    margin-bottom: 18px;
+
+    color: #302219;
+
+    letter-spacing: -1px;
+
+}
+
+
+.description,
+.form-description {
+
+    max-width: 470px;
+
+    margin-bottom: 30px;
+
+    color: #725f50;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.info-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.info-item .icon {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #d8c8b7;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+}
+
+
+.info-item h4 {
+
+    margin-bottom: 4px;
+
+    color: #3a2a21;
+
+    font-size: 14px;
+
+}
+
+
+.info-item p {
+
+    color: #806f63;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   MAIN BUTTONS
+========================================= */
+
+.contact-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 15px;
+
+}
+
+
+.contact-actions button,
+.contact-page form button {
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #5a4030;
+
+    color: #f8f1e8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+
+.contact-actions button:hover,
+.contact-page form button:hover {
+
+    background: #76553d;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-row {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.input-box {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 16px;
+
+}
+
+
+.input-box label {
+
+    margin-bottom: 7px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #705542;
+
+}
+
+
+.input-box input,
+.input-box textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    background: #f3ebe1;
+
+    border: 1px solid #d1c0af;
+
+    border-radius: 4px;
+
+    outline: none;
+
+    color: #3a2a21;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition:
+        border-color .25s ease,
+        background .25s ease;
+
+}
+
+
+.input-box input:focus,
+.input-box textarea:focus {
+
+    border-color: #8b6b53;
+
+    background: #faf6f0;
+
+}
+
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+
+    color: #a08d7c;
+
+}
+
+
+.input-box textarea {
+
+    resize: vertical;
+
+    min-height: 100px;
+
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-button {
+
+    align-self: flex-start;
+
+    margin-top: 18px;
+
+    padding: 10px 17px;
+
+    background: transparent;
+
+    border: 1px solid #bba897;
+
+    border-radius: 4px;
+
+    color: #806f63;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+
+.back-button:hover {
+
+    background: #5a4030;
+
+    border-color: #5a4030;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   PAYMENT METHODS
+========================================= */
+
+.payment-method {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #cdbbaa;
+
+}
+
+
+.payment-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #d8c8b7;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+}
+
+
+.payment-method h4 {
+
+    margin-bottom: 4px;
+
+    color: #3a2a21;
+
+    font-size: 14px;
+
+}
+
+
+.payment-method p {
+
+    color: #806f63;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.contact-image {
+
+    width: 100%;
+
+    height: 700px;
+
+    overflow: hidden;
+
+}
+
+
+.contact-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .contact-section {
+
+        padding: 30px 5%;
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-flip {
+
+        height: 700px;
+
+    }
+
+
+    .contact-image {
+
+        height: 450px;
+
+    }
+
+
+    .contact-page {
+
+        padding: 35px;
+
+    }
+
+
+    .contact-page h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .form-row {
+
+        flex-direction: column;
+
+        gap: 0;
+
+    }
+
+
+    .contact-actions {
+
+        flex-direction: column;
+
+    }
+
+}
+#successMessage {
+    display: none;
+    background-color: #f5e9dc;
+    color: #8b5e34;              /* بني */
+    border: 1px solid #c9a27a;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    animation: fadeInSuccess 0.4s ease-in;
+}
+
+@keyframes fadeInSuccess {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

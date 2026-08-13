@@ -1,0 +1,118 @@
+/* ==================================================
+   BUTTONS.CSS
+   كل الأزرار/الكبسات بالموقع بمكان واحد:
+   أزرار الهيرو، زر ستوري، زر view-all الدائري،
+   وزر الـ + تبع كل كارد منتج
+================================================== */
+
+/* أزرار الهيرو (ORDER NOW / SHOP BEST SELLERS) */
+.hero-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 125px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: all 0.25s ease;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(43, 26, 20, 0.15);
+}
+
+.order-button {
+    background: #B88962;
+    color: #FFF9EF;
+}
+
+.shop-button {
+    background: #FFF9EF;
+    color: #2B1A14;
+    border: 1px solid #2B1A14;
+}
+
+/* زر LEARN OUR STORY */
+.story-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    padding: 13px 22px;
+    background: #B88962;
+    color: #FFF9EF;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+
+.story-button:hover {
+    background: #4A2C20;
+    transform: translateY(-3px);
+}
+
+/* زر VIEW ALL - دائرة بيج كاملة (نص + سهم سوا) */
+.view-all {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #B88962;
+    color: #2B1A14;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.3;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.view-all span {
+    display: block;
+    font-size: 16px;
+    color: #2B1A14;
+}
+
+.view-all:hover {
+    transform: scale(1.06);
+    background: #FFF9EF;
+    color: #2B1A14;
+}
+
+.view-all:hover span {
+    color: #2B1A14;
+}
+
+/* زر + تبع كل كارد منتج (best seller و blends) */
+.product-toggle {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #B88962;
+    border-radius: 50%;
+    background: transparent;
+    color: #2B1A14;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.product-card.active .product-toggle {
+    transform: rotate(45deg);
+    background: #2B1A14;
+    color: #FFF9EF;
+}

@@ -1,0 +1,32 @@
+/* ==================================================
+   TICKER.CSS
+   الشريط المتحرك بأسفل الهيرو (الأنيميشن بـ animations.css)
+================================================== */
+.ticker {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 42px;
+    background: #2B1A14;
+    color: #FFF9EF;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.ticker-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: tickerMove 18s linear infinite;
+}
+
+.ticker b {
+    color: #B88962;
+}

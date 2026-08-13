@@ -1,0 +1,173 @@
+/* ==================================================
+   RESPONSIVE.CSS
+   كل الـ media queries بمكان واحد
+================================================== */
+@media (max-width: 1000px) {
+    .products,
+    .blends-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo, .logo video {
+        width: 85px;
+        height: 55px;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    .nav-left, .nav-right {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 8px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(50px, 13vw, 100px);
+        letter-spacing: -2px;
+    }
+
+    .coffee {
+        width: 300px;
+    }
+
+    .hero-buttons {
+        bottom: 90px;
+    }
+
+    .story-top {
+        flex-direction: column;
+    }
+
+    .story-header, .story-brand-image {
+        width: 100%;
+    }
+
+    .story-section {
+        padding: 100px 25px 80px;
+    }
+
+    .story-title {
+        font-size: clamp(48px, 11vw, 85px);
+        letter-spacing: -2px;
+    }
+
+    .story-description {
+        font-size: 13px;
+    }
+
+    .story-values {
+        grid-template-columns: 1fr;
+        gap: 70px;
+        margin-top: 80px;
+    }
+
+    .story-image {
+        height: 160px;
+    }
+
+    .story-image img {
+        width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .best-seller {
+        padding: 90px 5% 100px;
+    }
+
+    .best-seller-header {
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .best-seller-header h2 {
+        font-size: 48px;
+    }
+
+    .blends-section {
+        padding: 90px 5% 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .products,
+    .blends-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        height: 75px;
+    }
+
+    .logo, .logo video {
+        width: 75px;
+        height: 45px;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    .nav-left a:nth-child(2),
+    .nav-left a:nth-child(3),
+    .nav-right a:nth-child(1),
+    .nav-right a:nth-child(2) {
+        display: none;
+    }
+
+    .navbar a.contact-button {
+        padding: 10px 14px;
+    }
+
+    .hero {
+        padding-top: 75px;
+    }
+
+    .badge {
+        top: 120px;
+        font-size: 7px;
+        white-space: nowrap;
+    }
+
+    .hero-text {
+        top: 220px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(48px, 15vw, 85px);
+        letter-spacing: -2px;
+    }
+
+    .coffee {
+        width: 280px;
+    }
+
+    .hero-buttons {
+        bottom: 75px;
+        flex-direction: column;
+        width: 180px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .ticker {
+        height: 38px;
+    }
+
+    .other-section h2 {
+        font-size: 45px;
+    }
+}

@@ -1,0 +1,144 @@
+/* ==================================================
+   STORY.CSS
+   قسم "Our Story" (زر LEARN OUR STORY بـ buttons.css)
+================================================== */
+.story-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 130px 55px 100px;
+    background: #FFF9EF;
+    color: #2B1A14;
+    overflow: hidden;
+}
+
+.story-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.story-header {
+    width: 70%;
+    text-align: left;
+}
+
+.story-brand-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-brand-image img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.story-label {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 8px 15px;
+    background: #2B1A14;
+    color: #FFF9EF;
+    border-radius: 30px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.story-title {
+    max-width: 1100px;
+    margin: 0;
+    font-family: Impact, "Arial Narrow", Arial, sans-serif;
+    font-size: clamp(55px, 7vw, 110px);
+    line-height: 0.82;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.story-title span {
+    color: #B88962;
+}
+
+.story-description {
+    max-width: 760px;
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #6B5548;
+}
+
+.story-values {
+    max-width: 1400px;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.story-card {
+    text-align: center;
+    position: relative;
+}
+
+.story-image {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.story-image img {
+    width: 180px;
+    max-height: 180px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.story-card:hover .story-image img {
+    transform: translateY(-8px) rotate(-2deg);
+}
+
+.story-card h3 {
+    font-family: Impact, "Arial Narrow", Arial, sans-serif;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    color: #2B1A14;
+    margin-bottom: 13px;
+}
+
+.story-card p {
+    max-width: 330px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #6B5548;
+}
+
+/* أنيميشن الظهور عند السكرول (Scroll reveal) */
+.story-reveal {
+    opacity: 0;
+    transform: translateY(-90px);
+}
+
+.story-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.9s ease, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-label.story-visible { transition-delay: 0s; }
+.story-title.story-visible { transition-delay: 0.12s; }
+.story-description.story-visible { transition-delay: 0.24s; }
+.story-button.story-visible { transition-delay: 0.36s; }
+.story-card:nth-child(1).story-visible { transition-delay: 0.15s; }
+.story-card:nth-child(2).story-visible { transition-delay: 0.3s; }
+.story-card:nth-child(3).story-visible { transition-delay: 0.45s; }

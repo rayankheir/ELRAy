@@ -1,0 +1,76 @@
+/* ==================================================
+   NAVBAR.CSS
+================================================== */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 55px;
+    display: flex;
+    align-items: center;
+    background: rgba(243, 232, 213, 0.92);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 45px;
+    width: 105px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.logo video {
+    width: 105px;
+    height: 70px;
+    display: block;
+    object-fit: contain;
+    opacity: 1;
+    visibility: visible;
+    background: transparent;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #2B1A14;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+.navbar a:hover {
+    color: #B88962;
+}
+
+.navbar a.contact-button {
+    background: #B88962;
+    color: #FFF9EF;
+    padding: 12px 18px;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+}
+
+.navbar a.contact-button:hover {
+    background: #4A2C20;
+    color: #FFF9EF;
+    transform: translateY(-2px);
+}

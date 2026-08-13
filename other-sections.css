@@ -1,0 +1,22 @@
+/* ==================================================
+   OTHER-SECTIONS.CSS
+   الأقسام العامة اللي لسا فاضية (Testimonials, Journal,
+   Contact). قسم Blends خرج من هون وصار إله ملف خاص
+   blends.css لأنه فيه محتوى فعلي.
+================================================== */
+.other-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E8DCC8;
+}
+
+.other-section:nth-child(even) {
+    background: #D8C5AD;
+}
+
+.other-section h2 {
+    font-size: 70px;
+    color: #4A2C20;
+}
