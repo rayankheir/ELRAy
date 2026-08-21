@@ -466,28 +466,362 @@
 }
 
 /* ---------- RESPONSIVE ---------- */
+/* ==================================================
+   MERCH — RESPONSIVE
+================================================== */
+
+/* TABLET */
 @media (max-width: 900px) {
+
+    .merch-section {
+        padding-bottom: 70px;
+    }
+
+    .merch-hero {
+        padding: 80px 24px 55px;
+    }
+
+    .merch-hero-label {
+        margin-bottom: 20px;
+        font-size: 0.68rem;
+    }
+
+    .merch-hero-title {
+        font-size: clamp(2.4rem, 9vw, 4rem);
+        margin-bottom: 18px;
+    }
+
+    .merch-hero-sub {
+        font-size: 0.95rem;
+        margin-bottom: 26px;
+    }
+
+    .merch-cta {
+        padding: 13px 24px;
+    }
+
+    .merch-work {
+        padding: 55px 20px 0;
+    }
+
+    .merch-header {
+        margin-bottom: 35px;
+    }
+
     .merch-feature,
     .merch-wide,
     .merch-last {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 24px;
+        margin-bottom: 45px;
     }
 
+    /* الكاردات الصغيرة 2 حد بعض */
     .merch-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-bottom: 45px;
     }
 
-    .merch-hero {
-        padding: 100px 6% 60px;
+    .merch-card {
+        padding: 10px;
+        border-radius: 14px;
     }
 
-    .merch-work {
-        padding: 60px 6% 0;
+    .merch-info-sm {
+        padding: 14px 5px 5px;
+    }
+
+    .merch-name-sm {
+        font-size: 1rem;
+    }
+
+    .merch-desc-sm {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .merch-name {
+        font-size: 1.55rem;
+    }
+
+    .merch-desc {
+        font-size: 0.9rem;
+    }
+
+    .merch-img-wrap {
+        border-radius: 14px;
+    }
+
+    .merch-tag {
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        font-size: 0.58rem;
+    }
+
+    .merch-marquee-wrap {
+        margin-top: 55px;
+        padding: 20px 0;
     }
 }
 
+
+/* PHONE */
+/* ==================================================
+   RESPONSIVE — MERCH
+================================================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .merch-section {
+        padding-bottom: 60px;
+    }
+
+    .merch-hero {
+        padding: 80px 22px 50px;
+    }
+
+    .merch-hero-title {
+        font-size: clamp(2.4rem, 9vw, 4rem);
+    }
+
+    .merch-hero-sub {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    /* CAROUSEL */
+    .merch-carousel {
+        width: 100%;
+        max-width: 540px;
+        margin-top: 35px;
+    }
+
+    .merch-work {
+        padding: 55px 18px 0;
+    }
+
+    .merch-header {
+        margin-bottom: 35px;
+    }
+
+    .merch-feature,
+    .merch-wide,
+    .merch-last {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 40px;
+    }
+
+    /* 2 CARDS SIDE BY SIDE */
+    .merch-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-bottom: 40px;
+    }
+
+    .merch-card {
+        padding: 10px;
+        border-radius: 14px;
+    }
+
+    .merch-info-sm {
+        padding: 12px 5px 5px;
+    }
+
+    .merch-name-sm {
+        font-size: 1rem;
+    }
+
+    .merch-desc-sm {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .merch-name {
+        font-size: 1.5rem;
+    }
+
+    .merch-desc {
+        font-size: 0.9rem;
+    }
+
+    .merch-marquee-wrap {
+        margin-top: 45px;
+        padding: 18px 0;
+    }
+}
+
+
+/* PHONE */
+@media (max-width: 600px) {
+
+    .merch-hero {
+        padding: 60px 15px 40px;
+    }
+
+    .merch-hero-label {
+        font-size: 0.62rem;
+        margin-bottom: 18px;
+    }
+
+    .merch-hero-title {
+        font-size: clamp(2rem, 11vw, 3rem);
+        margin-bottom: 16px;
+    }
+
+    .merch-hero-sub {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .merch-cta {
+        padding: 12px 22px;
+        font-size: 0.72rem;
+    }
+
+    /* SMALLER CAROUSEL */
+    .merch-carousel {
+        margin-top: 28px;
+        border-radius: 14px;
+    }
+
+    .merch-carousel-track {
+        aspect-ratio: 1 / 1;
+    }
+
+    .merch-carousel-caption {
+        left: 10px;
+        bottom: 10px;
+        padding: 6px 10px;
+        font-size: 0.68rem;
+    }
+
+    .merch-carousel-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .merch-carousel-arrow.prev {
+        left: 8px;
+    }
+
+    .merch-carousel-arrow.next {
+        right: 8px;
+    }
+
+    .merch-work {
+        padding: 40px 12px 0;
+    }
+
+    .merch-header {
+        margin-bottom: 25px;
+    }
+
+    .merch-title {
+        font-size: 1.7rem;
+    }
+
+    /* KEEP 2 CARDS */
+    .merch-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        margin-bottom: 30px;
+    }
+
+    .merch-card {
+        padding: 7px;
+        border-radius: 12px;
+        min-width: 0;
+    }
+
+    .merch-img-placeholder {
+        aspect-ratio: 1 / 1;
+    }
+
+    .merch-info-sm {
+        padding: 9px 3px 3px;
+    }
+
+    .merch-num-sm {
+        font-size: 0.58rem;
+        margin-bottom: 4px;
+    }
+
+    .merch-name-sm {
+        font-size: 0.82rem;
+        margin-bottom: 4px;
+    }
+
+    .merch-desc-sm {
+        font-size: 0.66rem;
+        line-height: 1.35;
+    }
+
+    .merch-feature,
+    .merch-wide,
+    .merch-last {
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .merch-name {
+        font-size: 1.25rem;
+    }
+
+    .merch-desc {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .merch-tags {
+        gap: 5px;
+    }
+
+    .merch-tags span {
+        font-size: 0.55rem;
+        padding: 4px 7px;
+    }
+
+    .merch-marquee-wrap {
+        margin-top: 35px;
+        padding: 14px 0;
+    }
+
+    .merch-marquee-track {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* VERY SMALL PHONE */
+@media (max-width: 360px) {
+
+    .merch-grid {
+        gap: 6px;
+    }
+
+    .merch-card {
+        padding: 5px;
+    }
+
+    .merch-name-sm {
+        font-size: 0.75rem;
+    }
+
+    .merch-desc-sm {
+        font-size: 0.62rem;
+    }
+}
+
+
+/* ACCESSIBILITY */
 @media (prefers-reduced-motion: reduce) {
+
     .merch-marquee-track {
         animation: none;
     }

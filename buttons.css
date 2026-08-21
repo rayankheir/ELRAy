@@ -116,3 +116,78 @@
     background: #2B1A14;
     color: #FFF9EF;
 }
+/* ==============================
+   BUTTONS - RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+    /* HERO BUTTONS */
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero-buttons a {
+        min-width: 130px;
+        padding: 11px 16px;
+        font-size: 9px;
+    }
+
+    /* STORY BUTTON */
+    .story-button {
+        margin-top: 22px;
+        padding: 12px 20px;
+        font-size: 9px;
+    }
+
+    /* VIEW ALL */
+    .view-all {
+        width: 82px;
+        height: 82px;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .view-all span {
+        font-size: 14px;
+    }
+
+    /* PRODUCT + BUTTON */
+    .product-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 19px;
+        flex-shrink: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-buttons {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .hero-buttons a {
+        min-width: 120px;
+        padding: 10px 14px;
+        font-size: 8px;
+    }
+
+    .story-button {
+        padding: 11px 18px;
+    }
+
+    .view-all {
+        width: 72px;
+        height: 72px;
+        font-size: 7px;
+    }
+
+    .product-toggle {
+        width: 34px;
+        height: 34px;
+    }
+}

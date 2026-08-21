@@ -26,3 +26,45 @@
     align-items: start;
     text-align: left;
 }
+/* ==============================
+   OUR BLENDS - RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+
+    .blends-section {
+        padding: 90px 5% 100px;
+    }
+
+    .blends-section h2 {
+        margin-bottom: 45px;
+    }
+
+    .blends-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .blends-section {
+        padding: 70px 16px 80px;
+    }
+
+    .blends-section h2 {
+        margin-bottom: 35px;
+    }
+
+    .blends-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        width: 100%;
+    }
+
+    .blends-grid > * {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
