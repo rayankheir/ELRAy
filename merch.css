@@ -262,7 +262,8 @@
 .merch-img-wrap img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-position: center;
+    object-fit: contain;
     display: block;
 }
 
@@ -689,7 +690,7 @@
     }
 
     .merch-carousel-track {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 3 / 4;
     }
 
     .merch-carousel-caption {
